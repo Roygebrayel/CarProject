@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
     background-color: black;
+    z-index: 1;
 }
 .logo{
     width:175px;
