@@ -76,26 +76,24 @@
 }
 
 .inner-acc:nth-child(3) {
-    background: black;
+    background: rgba(0, 0, 0, 0.582);
 }
 
-.inner-acc:nth-child(4) {
-    background: #1c1c1c;
-}
 
-.acce-box h2 {
+
+.box h2 {
     color: white;
     font-size: 31px;
 }
 
-.acce-box {
+.box {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
 
-.acce-box img {
+.box img {
     width: 35%;
 }
 
@@ -110,9 +108,7 @@
     padding: 2rem;
 }
 
-.feature-products h1 span {
-    color: var(--fonts-color);
-}
+
 
 .feature-container {
     display: flex;
@@ -131,7 +127,7 @@
 }
 
 .inner-featurebox h2 {
-    color: var(--fonts-color);
+    color: #000000;
 
 }
 
@@ -163,14 +159,9 @@
 .inner-featurebox:nth-child(4) h2 {
 
     font-size: 1.5rem;
-    padding-top: 7.5rem;
+    padding-top: 2rem;
 }
 
-.inner-featurebox:nth-child(5) h2 {
-
-    font-size: 1.5rem;
-    padding-top: 1rem;
-}
 
 .inner-featurebox img {
     width: 80%;
