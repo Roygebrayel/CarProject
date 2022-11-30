@@ -73,3 +73,43 @@
     cursor: pointer;
     transition: 1s;
 }
+.image-buy{
+    margin-top: 20px;
+    position:relative;
+    width:400px;
+    display:inline-block ;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Audi{
+    display: block;
+    width:400px;
+    height:400px;
+    background-color:white;
+}
+.descr{
+position:absolute;
+top:0;
+left:0;
+width: 400px;
+height:400px;
+background: rgba(0,0,0,0.6);
+color:white;
+display: flex;
+align-items: center;
+justify-content: center;
+opacity: 0; /*hidden by default */
+transition: opacity 0.25s;
+cursor: pointer;
+}
+.descr:hover{
+    opacity:1;
+}
+.image-desc{
+    margin-right: 130px;
+    font-size:30px;
+    font-weight: bold;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+}
