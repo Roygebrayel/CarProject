@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color:black;
+}
+.nav1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    z-index: 1;
+}
+.logo{
+    width:175px;
+     height:80px;
+     cursor: pointer;
+}
+.nav1 ul  {
+    flex: 1;
+    text-align: center;
+}
+.nav1 ul li{
+    display:inline-block;
+    margin: 10px 20px;
+}
+.nav1 ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+    padding: 7px 13px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+ .nav1 .active, .nav1 a:hover{
+    color:black;
+    background: white;
+}
+.car{
+    margin-top: 150px;
+}
+.cars-comp{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+    margin-bottom: 3px;
+}
+.image{
+    width: 95px;
+    height: 95px;
+    object-fit: contain;
+    
+}
+#bmw{
+    width:60x;
+    height: 60px;
+}
+#edit{
+    color: white;
+    font-size: 30px;
+}
+.buttons{
+    width: 100px;
+    height: 100px;
+    border-color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 1s;
+}
