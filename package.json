@@ -1,0 +1,20 @@
+{
+  "name": "carproject",
+  "version": "1.0.0",
+  "description": "a car market ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roygebrayel/CarProject.git"
+  },
+  "author": "Roy and George",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Roygebrayel/CarProject/issues"
+  },
+  "homepage": "https://github.com/Roygebrayel/CarProject#readme"
+}

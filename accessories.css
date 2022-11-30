@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* css of the navigation bar */
+
+
+
+.nav1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    z-index: 1;
+}
+
+.logo {
+    width: 175px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.nav1 ul {
+    flex: 1;
+    text-align: center;
+}
+
+.nav1 ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.nav1 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 7px 13px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.nav1 .active,
+.nav1 a:hover {
+    color: black;
+    background: white;
+}
+
+/* css for the car accesories divisions */
+
+.main-accessories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    width: 100%;
+
+}
+
+.inner-acc {
+    flex: 1 1 50rem;
+}
+
+.inner-acc:nth-child(1) {
+    background: #1c1c1c;
+}
+
+.inner-acc:nth-child(2) {
+    background: black;
+}
+
+.inner-acc:nth-child(3) {
+    background: black;
+}
+
+.inner-acc:nth-child(4) {
+    background: #1c1c1c;
+}
+
+.acce-box h2 {
+    color: white;
+    font-size: 31px;
+}
+
+.acce-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.acce-box img {
+    width: 35%;
+}
+
+.feature-products {
+    background: #282828;
+}
+
+.feature-products h1 {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.feature-products h1 span {
+    color: var(--fonts-color);
+}
+
+.feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 15px;
+}
+
+.inner-featurebox {
+    background: #363636;
+    height: 300px;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.inner-featurebox h2 {
+    color: var(--fonts-color);
+
+}
+
+.inner-featurebox h3 {
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+
+
+}
+
+.inner-featurebox:nth-child(1) h2 {
+    font-size: 1.5rem;
+    padding-top: 3rem;
+}
+
+.inner-featurebox:nth-child(2) h2 {
+
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+.inner-featurebox:nth-child(3) h2 {
+
+    font-size: 1.5rem;
+
+}
+
+.inner-featurebox:nth-child(4) h2 {
+
+    font-size: 1.5rem;
+    padding-top: 7.5rem;
+}
+
+.inner-featurebox:nth-child(5) h2 {
+
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.inner-featurebox img {
+    width: 80%;
+}
