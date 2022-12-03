@@ -29,6 +29,8 @@
     width:175px;
      height:80px;
      cursor: pointer;
+     background-color:white;
+     object-fit: contain;
 }
 .nav1 ul  {
     flex: 1;

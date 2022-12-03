@@ -5,6 +5,9 @@
     font-family: 'Roboto', sans-serif;
     background-color:black;
 }
+body{
+    overflow-x: hidden;
+}
 .nav1{
     position: fixed;
     top: 0;
@@ -19,6 +22,8 @@
     width:175px;
      height:80px;
      cursor: pointer;
+     object-fit: contain;
+     background-color: white;
 }
 .nav1 ul  {
     flex: 1;
@@ -41,6 +46,9 @@
     color:black;
     background: white;
 }
+.car-descr{
+    display: inline-flex;
+}
 .car{
     margin-top: 150px;
 }
@@ -50,6 +58,7 @@
     justify-content: center;
     column-gap: 50px;
     margin-bottom: 3px;
+    list-style: none;
 }
 .image{
     width: 95px;
@@ -73,19 +82,31 @@
     cursor: pointer;
     transition: 1s;
 }
+.buttons:hover{
+    border-color: yellow;
+    transition: .5s;
+}
 .image-buy{
     margin-top: 20px;
     position:relative;
     width:400px;
-    display:inline-block ;
     margin-left: auto;
     margin-right: auto;
+    column-gap: 100px;
 }
-.Audi{
-    display: block;
+.car-descr{
+    position: relative;
+    left: 100px;
+    margin-top: 20px;
+    column-gap: 60px;
+}
+.car-brand{
     width:400px;
     height:400px;
-    background-color:white;
+    background-color:transparent;
+    object-fit: contain;
+    border: 4px solid white;
+    border-radius: 30px;
 }
 .descr{
 position:absolute;
@@ -95,21 +116,33 @@ width: 400px;
 height:400px;
 background: rgba(0,0,0,0.6);
 color:white;
-display: flex;
+display: inline-flex;
 align-items: center;
 justify-content: center;
 opacity: 0; /*hidden by default */
-transition: opacity 0.25s;
+transition: opacity 0.5s;
 cursor: pointer;
+
 }
 .descr:hover{
-    opacity:1;
+    opacity:2;
+    border: 4px solid yellow;
+    border-radius: 30px;
 }
 .image-desc{
     margin-right: 130px;
-    font-size:30px;
+    font-size:25px;
     font-weight: bold;
     background-color: transparent;
     color: white;
     text-align: center;
+  
+}
+.price{
+    margin-top: 10px;
+    color:white;
+    text-align: center;
+    border: 4px solid white;
+    border-radius: 30px;
+    font-size: 30px;
 }
