@@ -1,4 +1,4 @@
-var mixer= mixitup('.car-descr', {
+let mixerFeatured = mixitup('.car-descr', {
     selectors: {
         target: '.descr'
     },
