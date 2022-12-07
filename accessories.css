@@ -166,3 +166,74 @@
 .inner-featurebox img {
     width: 80%;
 }
+
+
+/* making the footer css */
+
+
+
+footer {
+    margin-top: 150px;
+    width: 100%;
+    padding: 100px 15%;
+    background-color: #333;
+    color: azure;
+    display: flex;
+}
+
+footer div {
+    text-align: center;
+
+}
+
+.second-col {
+    flex-grow: 2;
+
+}
+
+footer div h3 {
+    font-weight: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.first-col a {
+    display: block;
+    text-decoration: none;
+    color: azure;
+    margin-bottom: 10px;
+
+}
+
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: azure;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 30px;
+
+}
+
+.social-icons i {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+
+}
