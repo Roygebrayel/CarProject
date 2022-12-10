@@ -17,14 +17,15 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: rgba(0,0,0,0.8);
     z-index: 1;
+    height: 70px;
 }
 .logo{
     width:175px;
-     height:80px;
+     height:120px;
      cursor: pointer;
-     background-color:white;
+     background-color:transparent;
      object-fit: contain;
 }
 .nav1 ul  {
@@ -32,8 +33,9 @@
     text-align: center;
 }
 .nav1 ul li{
+    padding-top: 15px ;
     display:inline-block;
-    margin: 10px 20px;
+    margin: 20px 20px;
 }
 .nav1 ul li a{
     text-decoration: none;
@@ -47,6 +49,9 @@
  .nav1 .active, .nav1 a:hover{
     color:black;
     background: white;
+}
+#nohov .active, #nohov:hover{
+    background:none;
 }
 .services{
     width: 80%;

@@ -12,15 +12,18 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: rgba(0,0,0,0.8);
     z-index: 1;
+    height: 70px;
+
+
 }
 .logo{
     width:175px;
-     height:80px;
-     cursor: pointer;
-     object-fit: contain;
-     background-color: white;
+    height:120px;
+    cursor: pointer;
+    background-color:transparent;
+    object-fit: contain;
 }
 .nav1 ul  {
     flex: 1;
@@ -42,6 +45,9 @@
  .nav1 .active, .nav1 a:hover{
     color:black;
     background: white;
+}
+#nohov .active, #nohov:hover{
+    background:none;
 }
 .car-descr{
     display: inline-flex;

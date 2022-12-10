@@ -7,8 +7,6 @@
 
 /* css of the navigation bar */
 
-
-
 .nav1 {
     position: fixed;
     top: 0;
@@ -16,14 +14,17 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: black;
+    background-color: rgba(0,0,0,0.8);
     z-index: 1;
+    height: 70px;
 }
 
 .logo {
-    width: 175px;
-    height: 80px;
-    cursor: pointer;
+    width:175px;
+     height:120px;
+     cursor: pointer;
+     background-color:transparent;
+     object-fit: contain;
 }
 
 .nav1 ul {
@@ -46,12 +47,13 @@
     transition: 0.5s;
 }
 
-.nav1 .active,
-.nav1 a:hover {
+.nav1 .active,.nav1 a:hover {
     color: black;
     background: white;
 }
-
+#nohov .active, #nohov:hover{
+    background:none;
+}
 /* css for the car accesories divisions */
 
 .main-accessories {
