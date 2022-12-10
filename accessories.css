@@ -102,10 +102,10 @@
 }
 
 .feature-products h1 {
+    padding-top: 100px;
     color: white;
     font-size: 38px;
     text-align: center;
-    padding: 2rem;
 }
 
 
@@ -122,7 +122,7 @@
 .inner-featurebox {
     background: #363636;
     height: 300px;
-    padding: 4rem 0;
+    width: 200px;
     text-align: center;
 }
 
@@ -185,7 +185,9 @@ footer div {
     text-align: center;
 
 }
-
+footer div a{
+    text-transform: uppercase;
+}
 .second-col {
     flex-grow: 2;
 
@@ -225,7 +227,9 @@ form button {
     font-size: 15px;
     cursor: pointer;
 }
-
+.third-col p{
+    font-size: 20px;
+}
 .social-icons {
     margin-top: 30px;
 

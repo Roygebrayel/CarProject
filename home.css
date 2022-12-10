@@ -129,6 +129,9 @@ footer div{
     text-align: center;
 
 }
+footer div a{
+    text-transform: uppercase;
+}
 .second-col{
     flex-grow: 2;
 
@@ -164,6 +167,9 @@ form button {
     padding: 10px 30px;
     font-size: 15px;
     cursor: pointer;
+}
+.third-col p{
+    font-size: 20px;
 }
 .social-icons{
     margin-top: 30px;

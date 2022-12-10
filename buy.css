@@ -3,10 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    background-color:black;
-}
-body{
-    overflow-x: hidden;
+    background-color:rgb(0, 0, 0);
 }
 .nav1{
     position: fixed;
@@ -51,6 +48,7 @@ body{
 }
 .car{
     margin-top: 150px;
+    margin-bottom: 60px;
 }
 .cars-comp{
     display:flex;
@@ -62,7 +60,7 @@ body{
 }
 .image{
     width: 95px;
-    height: 95px;
+    height: 90px;
     object-fit: contain;
     
 }
@@ -149,8 +147,6 @@ cursor: pointer;
 
 /* making the footer css */
 
-
-
 footer {
     margin-top: 150px;
     width: 100%;
@@ -162,9 +158,11 @@ footer {
 
 footer div {
     text-align: center;
-
+    background-color: #333;
 }
-
+footer div a{
+    text-transform: uppercase;
+}
 .second-col {
     flex-grow: 2;
 
@@ -174,6 +172,7 @@ footer div h3 {
     font-weight: 30px;
     margin-bottom: 30px;
     letter-spacing: 1px;
+    background-color: #333;
 }
 
 .first-col a {
@@ -181,9 +180,12 @@ footer div h3 {
     text-decoration: none;
     color: azure;
     margin-bottom: 10px;
+    background-color: #333;
 
 }
-
+form{
+    background-color: #333;
+}
 form input {
     width: 400px;
     height: 45px;
@@ -193,6 +195,7 @@ form input {
     margin-bottom: 40px;
     outline: none;
     border: none;
+    background-color: #fff;
 }
 
 form button {
@@ -204,9 +207,16 @@ form button {
     font-size: 15px;
     cursor: pointer;
 }
+footer div p{
+    background-color: #333;
 
+}
+.third-col p{
+    font-size: 20px;
+}
 .social-icons {
     margin-top: 30px;
+    background-color: #333;
 
 }
 
@@ -214,5 +224,6 @@ form button {
     font-size: 22px;
     margin: 10px;
     cursor: pointer;
+    background-color: #333;
 
 }
