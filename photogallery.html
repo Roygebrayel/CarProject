@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="photogallery.css">
     <script src="https://kit.fontawesome.com/4bf05fcbce.js" crossorigin="anonymous"></script>
     <title>Buy-Cars</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
 </head>
 <body>
     <div >
@@ -19,5 +20,87 @@
                 <li><a  class="active"  href="photogallery.html">Photo gallery</a></li>
             </ul>
         </nav>
+        </div>
+    <div class="gallery">
+        <ul class="controls">
+            <li class="buttons active" data-filter="all">all</li>
+            <li class="buttons" data-filter="audi">audi</li>
+            <li class="buttons" data-filter="mercedes">mercedes</li>
+            <li class="buttons" data-filter="bmw">bmw</li>
+        </ul>
+        <div class="image-container">
+            <a href="car/audi.jpg" class="image audi">
+                <img src="car/audi.jpg" alt="audi">
+            </a>
+            <a href="carousel/audi-carousel.jpg" class="image audi ">
+                <img src="carousel/audi-carousel.jpg" alt="audi" >
+            </a>
+            <a href="car/audi-A3.png" class="image audi ">
+                <img src="car/audi-A3.png" alt="audi" style="background-color: white;">
+            </a>
+            <a href="car/audi-a8.png" class="image audi ">
+                <img src="car/audi-a8.png" alt="audi" style="background-color: white;">
+            </a>
+            <a href="car/audi-Q8.png" class="image audi ">
+                <img src="car/audi-Q8.png" alt="audi" style="background-color: white;">
+            </a>
+            <a href="car/mercedes.jpg" class="image mercedes">
+                <img src="car/mercedes.jpg" alt="mercedes">
+            </a>
+            <a href="carousel/Mercedes-carousel.jpg" class="image mercedes ">
+                <img src="carousel/Mercedes-carousel.jpg" alt="mercedes" >
+            </a>
+            <a href="car/Mercedes-c43.png" class="image mercedes ">
+                <img src="car/Mercedes-c43.png" alt="mercedes" style="background-color: white;">
+            </a>
+            <a href="car/Mercedes-e350.png" class="image mercedes ">
+                <img src="car/Mercedes-e350.png" alt="mercedes" style="background-color: white;">
+            </a>
+            <a href="car/Mercedes-GLE350.png" class="image mercedes ">
+                <img src="car/Mercedes-GLE350.png" alt="mercedes" style="background-color: white;">
+            </a>
+            
+
+            <a href="car/bmw.jpg" class="image bmw">
+                <img src="car/bmw.jpg" alt="bmw">
+            </a>
+            <a href="carousel/bmw-carousel.jpg" class="image bmw ">
+                <img src="carousel/bmw-carousel.jpg" alt="bmw" >
+            </a>
+            <a href="car/BMW-M3.png" class="image bmw ">
+                <img src="car/BMW-M3.png" alt="bmw" style="background-color: white;">
+            </a>
+            <a href="car/BMW-i41.png" class="image bmw " id="i4">
+                <img src="car/BMW-i41.png" alt="bmw" style="background-color: white;">
+            </a>
+            <a href="car/BMW-X7.png" class="image bmw ">
+                <img src="car/BMW-X7.png" alt="bmw" style="background-color: white;">
+            </a>
+        </div>
     </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.buttons').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+            var filter = $(this).attr('data-filter')
+            if(filter == 'all'){
+                $('.image').show(400);
+            }else{
+                $('.image').not('.'+filter).hide(200);
+                $('.image').filter('.'+filter).show(400);
+
+            }
+        });
+        $('.gallery').magnificPopup({
+
+            delegate:'a',
+            type:'image',
+            gallery:{
+                enabled:true
+            } 
+        });
+                });
+</script>
 </body>

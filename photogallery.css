@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    transition: all .2s linear;
+}
+body{
+    background-color: #222;
 }
 .header
 {
@@ -51,4 +55,57 @@
 }
 #nohov .active, #nohov:hover{
     background:none;
+}
+.gallery{
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+.gallery .controls{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    list-style: none;
+}
+.gallery .controls .buttons{
+    height: 40px;
+    width: 140px;
+    background: white;
+    color: #666;
+    font-size: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    margin :20px;
+    padding-top: 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    text-align: center;
+    text-transform: uppercase;
+}
+.gallery .controls .buttons.active{
+    background: black;
+    color: white;
+}
+
+.gallery .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery .image-container .image{
+height:250px;
+width: 350px;
+overflow: hidden;
+border: 15px solid black;
+border-radius: 3px;
+box-shadow: 0 3px 5px rbga(0,0,0,0.3);
+margin: 20px;
+}
+.gallery .image-container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
 }
