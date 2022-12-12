@@ -26,15 +26,15 @@
         </nav>
     <div class="car">
         <ul class="cars-comp">
-        <li><button class="buttons" data-filter=".Audi"><a href="#audi">
+        <li><button class="buttons" ><a href="#audi">
             <img  class ="image" src="logo/Audi-Logo.png" alt="Audi" >
             </button></a>
         </li>
-       <li><button class="buttons" data-filter=".Mercedes" id="audi"><a href="#mercedes">
+       <li><button class="buttons"  id="audi"><a href="#mercedes">
             <img class="image" src="logo/Mercedes-Logo.png" alt="Mercedes">
             </button></a>
         </li>
-        <li><button class="buttons" data-filter=".Bmw" ><a href="#bmw1">
+        <li><button class="buttons" ><a href="#bmw1">
             <img class="image" id="bmw" src="logo/BMW-Logo.png" alt="Bmw" >
             </button></a>
         </li> 
@@ -211,44 +211,62 @@
     
     <section>
         <footer>
-            <div class="first-col">
-                <h3>USEFUL LINKS</h3>
-                <a href="Homee.html#services">services</a>
-              <a href="buy.html">buy car</a>
-              <a href="accessories.html">buy accesories</a>
-              <a href="Homee.html#location">location</a>
-              <a href="photogallery.html">photo gallery</a>
-    
-    
-            </div>
-            <div class="second-col">
-                <h3>NEWSLETTER</h3>
-                <form>
-                    <input type="email" placeholder="your email" required>
-                    <br>
-                    <button type="submit">subscribe now</button>
-    
-                </form>
-            </div>
-            <div class="third-col">
+            <div class="footer-top">
+              <div class="footer-col">
+                  <h3>USEFUL LINKS</h3>
+                  <a href="#services">services</a>
+                  <a href="buy.html">buy car</a>
+                  <a href="accessories.html">buy accesories</a>
+                  <a href="#location">location</a>
+                  <a href="gallery.html">gallery</a>
+              </div>
+              <div class="footer-col">
+                <h3>COMPANIES</h3>
+                <a href="https://www.audi.com/">AUDI</a>
+                <a href="https://www.mercedes-benz.com/">MERCEDES</a>
+                <a href="https://www.bmw.com/">BMW</a>
+              </div>
+              <div class="footer-col">
                 <h3>CONTACT US</h3>
-                <p>+961 76123321</p>
-                <div class="social-icons">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-github"></i>
-    
+                <p>+961 76 123321</p>
+              </div>
+            </div>
+            <div class="footer-middle">
+              <h3>NEWS LETTER</h3>
+              <form>
+                <div>
+                  <input
+                    type="email"
+                    name="newsletter"
+                    id="newsletter"
+                    placeholder="exemple@gmail.com"
+                    required
+                  />
+                  <input type="submit" value="Subscribe now" />
                 </div>
-    
-    
+              </form>
             </div>
+            <div class="footer-bottom">
+              <a href="#" class="social">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+              <a href="#" class="social">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="#" class="social">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
             </div>
-    
-    
-    
-        </footer>
-    </section>
+          </footer>
+          <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+          ></script>
+          <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+          ></script>
+            </section>
     <script src="main.js"></script>
 
 </body>  

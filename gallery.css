@@ -164,3 +164,132 @@ margin: 20px;
     object-fit: cover;
 
 }
+a,
+    a:visited,
+    a:active {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+    }
+    
+    a:hover {
+      color:  darkblue;
+    }
+    footer {
+      background-color: black;
+      color: #dfdfdf;
+      padding-bottom: 3px;
+    }
+    
+    footer h3 {
+      color: white;
+    }
+    
+    .footer-top {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 50px;
+      justify-items: center;
+      max-width: 900px;
+      margin: 0 auto 80px auto;
+    }
+    
+    .footer-col {
+      width: max-content;
+      padding-top: 30px;
+    }
+    
+    .footer-col > * {
+      display: block;
+      width: max-content;
+    }
+    
+    .footer-col > h3 {
+      font-size: 25px;
+      padding-bottom: 10px;
+    }
+    
+    .footer-col a {
+      padding: 5px 0;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    
+    .footer-middle {
+      width: 100%;
+      text-align: center;
+    } 
+    .footer-middle h3{
+      font-size: 25px;
+      padding-bottom: 40px;
+    }
+    form div{
+      padding-bottom: 10px;
+    }
+    .footer-middle label {
+      display: block;
+      margin-bottom: 10px;
+      overflow-wrap: break-word;
+    }
+    
+    input {
+      padding: 10px;
+      border-radius: 3px;
+    }
+    
+    input[type="submit"] {
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    input[type="submit"]:hover {
+      color: white;
+      background-color: darkblue;
+    }
+    
+    .footer-bottom {
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px;
+    }
+    
+    a.social {
+      display: block;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: white;
+      color: black;
+      font-size: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+    
+    a.social:hover {
+      background-color: darkblue;
+      color: white;
+    }
+    
+    a.social:not(:last-child) {
+      margin-right: 10px;
+    }
+    
+    @media screen and (max-width: 900px) {
+      .footer-top {
+        justify-items: start;
+      }
+    }
+    
+    @media screen and (max-width: 660px) {
+      footer {
+        padding: 30px;
+      }
+    
+      .footer-middle {
+        text-align: left;
+      }
+    }

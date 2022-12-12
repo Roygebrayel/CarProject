@@ -217,83 +217,152 @@ cursor: pointer;
 
 /* making the footer css */
 
-footer {
-    margin-top: 150px;
-    width: 100%;
-    padding: 100px 15%;
-    background-color: #333;
-    color: azure;
-    display: flex;
-}
+a,
+    a:visited,
+    a:active {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+    }
+    
+    a:hover {
+      color:  darkblue;
+    }
+    footer {
+        margin-top: 40px;
+      background-color: #212121;
+      color: #dfdfdf;
+      padding-bottom: 3px;
+    }
+    
+    footer h3 {
+      color: white;
+    }
+    
+    .footer-top {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 50px;
+      justify-items: center;
+      max-width: 900px;
+      margin: 0 auto 80px auto;
+      background-color: #212121;
 
-footer div {
-    text-align: center;
-    background-color: #333;
-}
-footer div a{
-    text-transform: uppercase;
-}
-.second-col {
-    flex-grow: 2;
+    }
+    
+    .footer-col {
+      width: max-content;
+      padding-top: 30px;
+      background-color: #212121;
 
-}
+    }
+    
+    .footer-col > * {
+      display: block;
+      width: max-content;
+      background-color: #212121;
 
-footer div h3 {
-    font-weight: 30px;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-    background-color: #333;
-}
+    }
+    
+    .footer-col > h3 {
+      font-size: 25px;
+      padding-bottom: 10px;
+    }
+    
+    .footer-col a {
+      padding: 5px 0;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    
+    .footer-middle {
+      width: 100%;
+      text-align: center;
+      background-color: #212121;
 
-.first-col a {
-    display: block;
-    text-decoration: none;
-    color: azure;
-    margin-bottom: 10px;
-    background-color: #333;
+    } 
+    .footer-middle h3{
+      font-size: 25px;
+      padding-bottom: 40px;
+      background-color: #212121;
 
-}
-form{
-    background-color: #333;
-}
-form input {
-    width: 400px;
-    height: 45px;
-    border-radius: 4px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    outline: none;
-    border: none;
-    background-color: #fff;
-}
+    }
+    form div{
+      padding-bottom: 10px;
+      background-color: #212121;
 
-form button {
-    background: transparent;
-    border: 2px solid #fff;
-    color: azure;
-    border-radius: 30px;
-    padding: 10px 30px;
-    font-size: 15px;
-    cursor: pointer;
-}
-footer div p{
-    background-color: #333;
+    }
+    .footer-middle label {
+      display: block;
+      margin-bottom: 10px;
+      overflow-wrap: break-word;
+    }
+    
+    input {
+      padding: 10px;
+      border-radius: 3px;
+      background-color: white;
 
-}
-.third-col p{
-    font-size: 20px;
-}
-.social-icons {
-    margin-top: 30px;
-    background-color: #333;
-
-}
-
-.social-icons i {
-    font-size: 22px;
-    margin: 10px;
-    cursor: pointer;
-    background-color: #333;
-
-}
+    }
+    
+    input[type="submit"] {
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    
+    input[type="submit"]:hover {
+      color: white;
+      background-color: darkblue;
+    }
+    
+    .footer-bottom {
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 10px;
+      background-color: #212121;
+    }
+    
+    a.social {
+      display: block;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: white;
+      color: white;
+      font-size: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+    ion-icon{
+        background-color: transparent;
+        color: black;
+    }
+    
+    a.social:hover {
+      background-color: darkblue;
+      color: white;
+    }
+    
+    a.social:not(:last-child) {
+      margin-right: 10px;
+    }
+    
+    @media screen and (max-width: 900px) {
+      .footer-top {
+        justify-items: start;
+      }
+    }
+    
+    @media screen and (max-width: 660px) {
+      footer {
+        padding: 30px;
+      }
+    
+      .footer-middle {
+        text-align: left;
+      }
+    }
