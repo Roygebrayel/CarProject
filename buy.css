@@ -5,49 +5,113 @@
     font-family: 'Roboto', sans-serif;
     background-color:rgb(0, 0, 0);
 }
-.nav1{
+.header{
+    width:100%;
+}
+nav{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    height: 70px;
     background-color: rgba(0,0,0,0.8);
     z-index: 1;
-    height: 70px;
-
-
+}
+nav a{
+    background-color: transparent;
 }
 .logo{
     width:175px;
-    height:120px;
-    cursor: pointer;
-    background-color:transparent;
-    object-fit: contain;
+     height:120px;
+     cursor: pointer;
+     object-fit: contain;
+     background-color: transparent;
+
+
 }
-.nav1 ul  {
-    flex: 1;
-    text-align: center;
+.nav-links {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
 }
-.nav1 ul li{
-    display:inline-block;
-    margin: 10px 20px;
+.nav-links li {
+    list-style: none;
+    background-color: transparent;
 }
-.nav1 ul li a{
+.nav-links li a{
+    background-color: transparent;
     text-decoration: none;
     color:white;
     font-size: 25px;
-    padding: 7px 13px;
     border-radius: 100px;
     text-transform: uppercase;
     transition: 0.5s;
 }
- .nav1 .active, .nav1 a:hover{
+ .nav-links .active, .nav-links a:hover{
     color:black;
     background: white;
+    padding: 5px;
 }
 #nohov .active, #nohov:hover{
-    background:none;
+    background:transparent;
+}
+.burger{
+    display: none;
+}
+.burger div{
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 2px;
+}
+@media screen and (max-width:1024px){
+    .nav-links  {
+    width: 60%;
+    }
+}
+@media screen and (max-width:900px){
+body{
+    overflow-x: hidden;
+}
+.nav-links{
+    position: absolute;
+    right:0px;
+    height: 92vh;
+    top: 10vh;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    transform: translateX(100%);/*move to left*/
+    transition: transform 0.5s ease-in;
+}
+ .nav-links li{
+    opacity: 0;
+ }
+ .burger{
+    display: block;
+    cursor: pointer;
+ }
+}
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    form{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    
 }
 .car-descr{
     display: inline-flex;
