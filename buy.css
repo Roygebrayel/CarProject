@@ -168,6 +168,14 @@ body{
     margin-top: 20px;
     column-gap: 60px;
 }
+.car-descr1{
+  display: inline-flex;
+  position: relative;
+  left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  column-gap: 60px;
+}
 .car-brand{ 
     width:400px;
     height:400px;
@@ -350,13 +358,40 @@ a,
     a.social:not(:last-child) {
       margin-right: 10px;
     }
+    @media screen and (max-width: 1450px) {
+      .car-descr{
+        display: inline-block;
+        position: relative;
+        left: 300px;
+      }    
+      #bm1,#bm2,#bm3{
+        position: relative;
+        left: 250px;
+      }
+  }
+    @media screen and (max-width: 1250px) {
+      .car-descr{
+        display: inline-block;
+        position: relative;
+        left: 110px;
+      }
+    }
+    @media screen and (max-width: 1024px) {
     
+      .car-descr{
+        display: block;
+        position: relative;
+        left: 50px;
+      }
+    }
     @media screen and (max-width: 900px) {
       .footer-top {
         justify-items: start;
       }
+      .car-descr{
+        display: block;
+      }
     }
-    
     @media screen and (max-width: 660px) {
       footer {
         padding: 30px;
