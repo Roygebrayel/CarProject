@@ -142,6 +142,7 @@ body{
 .box h2 {
     color: white;
     font-size: 31px;
+    padding-left: 50px;
 }
 
 .box {
