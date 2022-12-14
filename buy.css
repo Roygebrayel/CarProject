@@ -375,6 +375,10 @@ a,
         position: relative;
         left: 110px;
       }
+      #bm1,#bm2,#bm3{
+        position: relative;
+        left: 260px;
+      }
     }
     @media screen and (max-width: 1024px) {
     
@@ -382,6 +386,10 @@ a,
         display: block;
         position: relative;
         left: 50px;
+      }
+      #bm1,#bm2,#bm3{
+        position: relative;
+        left: 0px;
       }
     }
     @media screen and (max-width: 900px) {
